@@ -13,8 +13,8 @@ pipeline {
             def instanceCount = runninginstances.size()
             echo "Number of running instances: $instanceCount"
             if (instanceCount > 1) {
-                    emailext to: env.email_recipients,
-                    subject: "Hight no. of running instances detected",
+                    emailext to: 'shraddhaw2398@gmail.com',
+                    subject: "High no. of running instances detected",
                     body: "There are currently ${instanceCount} running instances"
             }
           }
