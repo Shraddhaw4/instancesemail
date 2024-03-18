@@ -2,7 +2,7 @@ pipeline {
     environment {
           AWS_ACCESS_KEY_ID     = credentials('creds')
           AWS_SECRET_ACCESS_KEY = credentials('creds')
-          email_recipients      = 'shraddhaw2398@gmail.com'
+          email_recipients      = ''
     }
     agent {label 'terraform'}
     stages {
